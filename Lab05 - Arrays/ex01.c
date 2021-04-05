@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+int calc(){
+  int x=0;
+    x = x+1;
+    return x;
+}
+
 int main(){
     printf("<< Listando um vetor >>\n");
     int numero[5];
