@@ -2,7 +2,24 @@
 
 int main(){
     printf("<< Listando um vetor >>\n");
+    int numero[5];
+    
+    printf("Entre com o numero 1: ");
+    scanf("%d", &numero[0]);    
+    printf("\nEntre com o numero 2: ");
+    scanf("%d", &numero[1]);
+    printf("\nEntre com o numero 3: ");
+    scanf("%d", &numero[2]);
+    printf("\nEntre com o numero 4: ");
+    scanf("%d", &numero[3]);
+    printf("\nEntre com o numero 5: ");
+    scanf("%d", &numero[4]);
+    printf("\nEntre com o numero 6: ");
+    scanf("%d", &numero[5]);
 
+    printf("\n");
+
+    printf("\nValores lidos: %d %d %d %d %d %d\n",numero[0], numero[1], numero[2], numero[3], numero[4], numero[5]);
     return 0;
 }
 

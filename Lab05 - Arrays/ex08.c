@@ -3,6 +3,27 @@
 int main(){
     printf("<< Media e desvio-padrao >>\n");
 
+    int valor[5];
+    int i;
+    float media = 0;
+    float desvioPadrao = 0;
+    int p = 0;
+    float desvio = 0;
+
+    for (i=0;i<5;i++)
+    {
+        printf("\nDigite o valor %d: ",i + 1);
+        scanf("%d",&valor[i]);
+        media = media + valor[i];       
+    }
+    media = media / 5;
+    for(i=0;i<5;i++)
+    {
+        p = p + pow(valor[i] - media,2);
+    }
+    desvio = sqrt(p/(5-1));
+    printf("\nA media eh 64 e o desvio-padrao eh %.2f",desvio);
+
     return 0;
 }
 

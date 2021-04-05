@@ -2,6 +2,35 @@
 
 int main(){
     printf("<< Normalizando as notas >>\n");
+    
+    int nota[5];
+    int contador;
+    int media = 0;
+    int maiorNota = 0;
+    int index = 0;
+
+    for (contador=0;contador<5;contador++)
+    {
+        printf("\nEntre com a nota do aluno %d: ",contador + 1);
+        scanf("%d",&nota[contador]);
+        
+    }
+    for (contador=0;contador<=4;contador++)
+    {
+        if(maiorNota < nota[contador]){
+            maiorNota = nota[contador];
+            index = contador;
+        }
+    }
+
+    printf("\nNotas normalizadas\n\n");
+    
+    for (contador=0;contador<5;contador++)
+    {
+        nota[contador] = (nota[contador]*100)/maiorNota;
+        printf("A nota do aluno %d é %d\n",contador+1, nota[contador]);
+    }
+    
 
     return 0;
 }

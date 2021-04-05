@@ -2,6 +2,22 @@
 
 int main(){
     printf("<< Zerando negativos >>\n");
+    int vetor[5];
+    int i;
+
+    for(i=0; i < 5; i++){
+        printf("\nEntre com o numero %d: ",i+1);
+        scanf("%d",&vetor[i]);
+    }
+    
+    for(i=0; i < 5; i++){
+        if (vetor[i] <= 0)
+        {
+            vetor[i] = 0;
+        }   
+    }
+
+    printf("Negativos zerados: %d %d %d %d %d\n",vetor[0], vetor[1], vetor[2], vetor[3], vetor[4]);
 
     return 0;
 }

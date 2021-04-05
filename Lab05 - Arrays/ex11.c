@@ -1,15 +1,38 @@
 #include <stdio.h>
 
 int main(){
-    printf("<< Subtracao de vetores >>\n");
-
-    return 0;
-}
-
-#include <stdio.h>
-
-int main(){
     printf("<< Pares e Ímpares >>\n");
+    int v[5];
+    int v1[5];
+    int v2[5];
+    int i = 0;
+
+    for (i = 0; i < 5; i++)
+    {
+        printf("\nDigite o valor %d ",i+1);
+        scanf("%d",&v[i]);
+    }
+
+    printf("\n Ímpares: ");
+
+    for (i = 0; i < 5; i++)
+    {
+        if (v[i] % 2 != 0){
+            v1[i] = v[i];
+        printf("%d, ",v1[i]);
+        }
+    }
+    
+    printf("\nPares: ");
+    for (i = 0; i < 5; i++)
+    {
+        if(v[i] % 2 == 0){
+            v2[i] = v[i];
+            printf("%d, ",v2[i]);
+        }
+    }
+    
+
 
     return 0;
 }
