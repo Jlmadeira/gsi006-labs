@@ -2,6 +2,15 @@
 
 int main(){
     printf("<< Universidade X >>\n");
+    int i;
+    int numCadastros = 0;
+    printf("Quantos alunos serão cadastrados: ");
+    scanf("%d",&numCadastros);
+
+    int numAluno;
+    char classeAluno;
+    float cra = 0;
+    
 
     return 0;
 }

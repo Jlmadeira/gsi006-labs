@@ -3,6 +3,27 @@
 int main(){
     printf("<< Listando um vetor de numeros pares>>\n");
 
+    int numero[5];
+    int contador = 0;
+
+    while (contador < 6)
+    {
+        printf("\nEntre com o numero %d: ",contador + 1);
+        scanf("%d",&numero[contador]);
+        if (numero[contador] % 2 != 0)
+        {
+            printf("Erro: Valor invalido");
+        }
+        else{
+            contador ++;
+        }
+        
+              
+    }
+    printf("\n");
+    printf("Os numeros pares digitados foram: %d %d %d %d %d %d\n",numero[0], numero[1], numero[2], numero[3], numero[4], numero[5]);
+    
+
 
     return 0;
 }
